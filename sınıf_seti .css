@@ -1,0 +1,100 @@
+
+/* Genel sayfa düzeni */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+
+    height: 1000px;
+    margin: 0;
+    position: relative;
+}
+
+
+
+/* Formun dış çerçevesi */
+form {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+
+    
+}
+
+/* Form başlığı */
+form h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Etiketler */
+label {
+    font-size: 12px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Form elemanları */
+input, select {
+    width: 100%;
+    padding: 5px;
+    margin: 8px 0 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Odaklanınca input ve select kutularının görünümü */
+input:focus, select:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Submit butonu */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Hata mesajları */
+#errorContainer {
+    color: #d9534f;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+#errorContainer div {
+    padding: 10px;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#errorContainer{
+    position: relative;
+    left: -300px;
+    top: 470px;
+}

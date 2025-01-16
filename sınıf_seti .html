@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form KOntrol</title>
+        <link rel="stylesheet" href="sınıf_seti .css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+      
+    </head>
+    <body>
+        <div class="container">
+        <form id="myForm">
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username" required>
+            
+            <label for="birthYear">Birth Year:</label>
+            <input type="number" name="birthYear" id="birthYear" required>
+            
+            <label for="eyeColor">Eye Color:</label>
+            <select name="eyeColor" id="eyeColor" required>
+                <option value="brown">Brown</option>
+                <option value="green">Green</option>
+                <option value="gray">Gray</option>
+                <option value="blue">Blue</option>
+            </select>
+            
+            <label for="hairColor">Hair Color:</label>
+            <select name="hairColor" id="hairColor" required>
+                <option value="black">Black</option>
+                <option value="brown">Brown</option>
+                <option value="white">White</option>
+                <option value="red">Red</option>
+                <option value="other">Other</option>
+            </select>
+            
+            <label for="height">Height (m):</label>
+            <input type="number" name="height" id="height" step="0.01" required>
+            
+            <label for="weight">Weight (kg):</label>
+            <input type="number" name="weight" id="weight" required>
+            
+            <button type="submit">Submit</button>
+        </form>
+        
+        
+        
+    </div>
+    <div id="errorContainer" style="margin-top: 10px; color: red;"></div>
+        <script src="sinif.js"></script>
+    </body>
+</html>
